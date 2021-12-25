@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* Makes 1 rem equals to 10px */
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #0e1b2e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  font-family: "Quicksand", sans-serif;
+  height: 100vh;
+  align-items: center;
+}
+
+.card {
+  background-color: #15273f;
+  padding: 2.2rem;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card__img-container {
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 2.9rem;
+  cursor: pointer;
+  background-image: url("./images/image-equilibrium.jpg");
+  background-size: cover;
+}
+
+.view {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.404);
+  display: none;
+}
+
+.view img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card__img-container:hover .view {
+  display: block;
+}
+
+.card__img {
+  width: 100%;
+  height: auto;
+}
+
+.card__title {
+  font-size: 2.2rem;
+  margin-bottom: 2.7rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+.card__title:hover {
+  color: #27eaf0;
+}
+
+.card__description {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #ffffff6b;
+}
+
+.price-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.4rem 0 2.8rem 0;
+  border-bottom: 1px solid #2f4159;
+}
+.etherium {
+  display: flex;
+  align-items: center;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+}
+
+.etherium__logo,
+.time__icon {
+  display: inline-block;
+  margin-right: 0.8rem;
+}
+
+.etherium__amount,
+.time__remaining {
+  font-size: 1.7rem;
+}
+
+.etherium__amount {
+  color: #27eaf0;
+  font-weight: 600;
+}
+
+.time__remaining {
+  font-weight: 400;
+  transition: color 0.5s;
+  cursor: pointer;
+}
+
+.time__remaining:hover {
+  color: #27eaf0;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  padding-top: 1.3rem;
+  font-size: 1.7rem;
+}
+
+.creator__img-container {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-right: 1.6rem;
+}
+
+.creator__img {
+  width: 100%;
+  height: auto;
+}
+
+.creator__pretext {
+  color: #ffffff6b;
+}
+
+.creator__name {
+  transition: color 0.5s;
+  cursor: pointer;
+}
+
+.creator__name:hover {
+  color: #27eaf0;
+}
+
+.reference a:link,
+.reference a:visited {
+  text-decoration: none;
+  color: white;
+  border-bottom: 0.5px solid #fff;
+}
